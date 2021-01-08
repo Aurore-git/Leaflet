@@ -1,0 +1,163 @@
+*{
+    font-family:'ubuntu';
+}
+
+.nav{
+  border-bottom: 5px solid #065885;
+}
+
+.nav ul{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+}
+
+li.allo{
+    text-transform: none;
+}
+
+.nav li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span.normal{
+    font-weight: normal;
+}
+
+.nav a{
+    color: black !important;
+}
+
+.nav a:hover{
+    color: #0077be !important;
+}
+
+.nav .allo a{
+    text-align: center;
+    background-color: #339966;
+    color: white !important;
+}
+
+.nav .allo a:hover{
+    text-decoration: underline !important;
+}
+
+button.navbar-toggler{
+    margin: 10px;
+}
+
+.brand{
+    display: none;
+}
+
+.logo{ 
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 250px;
+    height: auto;
+}
+
+h1{
+    color:rgb(18, 109, 194);
+    text-decoration:underline;
+    display: flex;
+    justify-content: center;
+    margin-top:3%;
+    margin-bottom: 3%;
+}
+
+#cath{
+    background-image: url(.../images/cathedrale2.jpg);
+    height:50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.barre{
+    margin-top:3%;
+    margin-bottom:3%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+
+}
+
+.img-responsive{
+    border-bottom: 5px solid #065885;
+}
+
+#presentation{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+#photo{
+    border: 2px solid;
+    border-color:rgb(18, 109, 194);;
+}
+
+.texte{
+    text-align: justify;
+    margin-left:5%;
+}
+
+#mapid { 
+    margin-top:3%;
+    margin-bottom:3%;
+    height: 550px;
+    width:80%;
+}
+
+
+.box-container{
+    width:300px;
+    height:300px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:5%;
+}
+
+
+.box{
+    width:150px;
+    height:150px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5rem;
+    color:bl#424242;
+}
+
+#city{
+    background-color:rgb(151, 146, 146);
+}
+
+#temp{
+    background-color:rgb(241, 241, 135);
+}
+
+#humidity{
+    background-color:rgb(236, 211, 215);
+}
+
+#wind{
+    background-color:rgb(187, 196, 236);
+}
+
+footer{
+    border-top: 5px solid #065885;
+    color:white;
+    font-size:0.7em;
+    background-color:rgb(99, 99, 245);
+    height:70px;
+    width:100%;
+}
+
+
