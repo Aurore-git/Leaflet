@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" type="text/css" href="Assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css"> 
+</head>
+
+<body >
+
+    <header>
+
+      <!--barre de navigation-->
+       
+      <nav class="col nav navbar-expand-lg bg-white navbar-light sticky-top" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <div id="navbarContent" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href=""><span class="normal">Au</span><br/>quotidien</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><span class="normal">Démarches</span><br/>& téléservices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><span class="normal">Sorties</span><br/>& découvertes</a>
+              </li>
+              <a class="navbar-brand" href="map.html"><img src="Assets/images/logo.png" alt="logo"/></a>
+              <li class="nav-item">
+                <a class="nav-link" href=""><span class="normal">La</span><br/>municipalité</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><span class="normal">Participation</span><br/>citoyenne</a>
+              </li>
+              <li class = "nav-item allo">
+                <a class="nav-link" href="">Allo Narbonne<br/><span class="normal">0800 15 13 11</span></a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header> 
+    
+    <main>
+
+      <!--Photo Cathédrale-->
+
+      <div class="container-fluid" id="cath">
+       <p>aundk</p>
+      </div>
+
+      <figure class="barre">
+        <img src="Assets/images/barre.png" width="90%" alt="Barre de séparation"/>
+      </figure>
+
+
+      <!--Présentation-->
+
+      <h1>Présentation</h1>
+
+      <div class="container" id="presentation">
+
+        <img id="photo" src="Assets/images/identité.jpg" width="10%" height="20%" alt="identité" />
+
+        <p class="texte"><b>Narbonne</b> est la commune la plus grande et la plus peuplée du département de l’Aude en Occitanie et c'est aussi la ville où j'ai grandi, de l'école primaire au lycée Dr lacroix où j'ai décroché 
+           mon bac, avant de partir sur montpellier.<br/>
+           Narbonne est située au cœur du parc naturel régional de la Narbonnaise en Méditerranée et riche de nombreux sites 
+           remarquables comme le massif de la Clape, l’abbaye de Fontfroide, des vestiges gallo-romains ou le canal de la Robine, classé au patrimoine de l’UNESCO. 
+           Elle possède également une plage de 5 kilomètres. Chaque année, le Narbonne Extrême Tour fait le bonheur des habitants et visiteurs. 
+           L’économie de la région narbonnaise est soutenue par le tourisme et la viticulture. Sur le plan sportif, le Racing club de Narbonne Méditerranée (RCNM),
+           en rugby à XV, reste l’équipe professionnelle phare de la ville.<br/>
+           Narbonne reste donc très agréable et j'y vis encore aujourd'hui. Je tenais donc à vous présenter les endroits qui, pour moi, 
+           définissent au mieux sa diversité culturelle</p>
+
+      </div>
+
+      <figure class="barre">
+        <img src="Assets/images/barre.png" width="90%" alt="Barre de séparation"/>
+      </figure>
+
+
+      <!--Carte Narbonne-->
+
+      <h1>Carte de Narbonne</h1>
+  
+      <div class="container justify-content-center" id="mapid" >
+      </div>
+
+      <figure class="barre">
+        <img src="Assets/images/barre.png" width="90%" alt="Barre de séparation"/>
+      </figure>
+
+
+      <!--Carte Météo-->
+
+      <h1>Météo du jour de Narbonne</h1>
+
+      <div class="container" >
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
+            <div class="box-container">
+              <div id="city" class="box"></div>
+              <div id="temp" class="box"></div>
+              <div id="humidity" class="box"></div>
+              <div id="wind" class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+          <p>Copyright:AuroreMalochet2020</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script type="text/javascript" src="Assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Assets/js/script.js"></script>
+</body>
+
+</html>
