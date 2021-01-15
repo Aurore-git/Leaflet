@@ -70,12 +70,13 @@ h1{
 }
 
 #cath{
-    background-image: url(.../images/cathedrale2.jpg);
-    height:50%;
+    background-image: url("../images/cathedrale2.jpg");
+    height:500px;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: scroll;
     background-size: cover;
+    border-bottom: 5px solid #065885;
 }
 
 .barre{
@@ -87,9 +88,6 @@ h1{
 
 }
 
-.img-responsive{
-    border-bottom: 5px solid #065885;
-}
 
 #presentation{
     display: flex;
