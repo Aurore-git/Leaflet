@@ -1,5 +1,6 @@
 /* Carte de Narbonne*/
-var mymap = L.map('mapid').setView([43.184277, 	3.003078], 15);
+var mymap = L.map('mapid').setView([43.184277, 	3.003078], 15
+    );
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -105,9 +106,9 @@ var marker5 = L.marker([43.184878707684476, 3.0037522315979004],{icon: cathIcon}
 
 var circle = L.circle([ 43.183331, 3], {
     color: '#BA55D3',
-    fillColor: 'purple',
+    fillColor: 'red',
     fillOpacity: 0.5,
-    radius: 70
+    radius: 100
 }).addTo(mymap);
 
 marker5.bindPopup("<p><b>Cathédrale Saint-Just et Saint-Pasteur</b><br>monument le plus prestigieux de la ville de Narbonne.<br/> Elle a rang de cocathédrale du diocèse de Carcassonne.</p><img src='Assets/images/cathedrale.jpeg'>");
